@@ -1,0 +1,67 @@
+#compTweet {
+  padding-top: 1em;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+  background-color: #525A75;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+}
+
+#txtbox {
+  padding: 10px;
+  width: 70vw;
+  height: 10vh;
+  outline: none;
+  color: white;
+  background-color: #525A75;
+  border: 2px solid transparent;
+  border-bottom-color: black;
+  border-bottom-width: 5px;
+  border-style: solid;
+  line-height: 1.2;
+
+}
+
+#txtbox::placeholder {
+  text-align: center;
+  color: #9fa8c6;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+
+#txtbox:hover {
+  cursor: pointer;
+  background-color: #737e9f;
+  
+}
+
+#sendtwt {
+  font-family: 'Bungee', cursive ;
+  border-radius: 15px;
+  background-color: #FC997E;
+  color: white;
+  padding: 16px 25px;
+  text-decoration: none;
+  margin: 15px;
+  box-shadow: 1px 1px #000000;
+}
+
+#sendtwt:hover {
+  cursor: pointer;
+  background-color: #efb6a7;
+}
+
+.counter {
+  font-family: 'Bungee', cursive ;
+  color: antiquewhite;
+  display: flex;
+  justify-content: left;
+  padding-left: .5em;
+}
