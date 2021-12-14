@@ -78,7 +78,7 @@ form {
   border-radius: 15px;
   background-color: #FC997E;
   color: white;
-  padding: 16px 32px;
+  padding: 16px 25px;
   text-decoration: none;
   margin: 15px;
   box-shadow: 1px 1px #000000;
@@ -93,7 +93,8 @@ form {
   font-family: 'Bungee', cursive ;
   color: antiquewhite;
   display: flex;
-  justify-content: right;
+  justify-content: left;
+  padding-left: .5em;
 }
 
 /*
