@@ -45,8 +45,9 @@ form {
 }
 
 #txtbox {
-  padding: 1em;
+  padding: 10px;
   width: 70vw;
+  height: 10vh;
   outline: none;
   color: white;
   background-color: #525A75;
@@ -55,14 +56,15 @@ form {
   border-bottom-width: 5px;
   border-style: solid;
   line-height: 1.2;
-  border-radius: 15px;
+
 }
 
 #txtbox::placeholder {
-  color: white;
+  text-align: center;
+  color: #9fa8c6;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: italic;
   font-weight: 200;
-  text-shadow:2px 2px #000000;
 }
 
 #txtbox:hover {
@@ -72,6 +74,7 @@ form {
 }
 
 #sendtwt {
+  font-family: 'Bungee', cursive ;
   border-radius: 15px;
   background-color: #FC997E;
   color: white;
@@ -87,6 +90,8 @@ form {
 }
 
 .counter {
+  font-family: 'Bungee', cursive ;
+  color: antiquewhite;
   display: flex;
   justify-content: right;
 }
