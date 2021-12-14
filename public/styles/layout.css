@@ -28,7 +28,24 @@ main {
   justify-content: center;
 }
 
+form {
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+  background-color: #FC997E;
+  justify-content: center;
+  align-items: center;
+}
 
+label {
+  display: flex;
+  border-bottom: black;
+}
+
+.counter {
+  display: flex;
+  justify-content: right;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
