@@ -28,18 +28,62 @@ main {
   justify-content: center;
 }
 
+/* ----------------- make new tweet form ----------------- */
+
+h2 {
+  text-shadow:2px 2px #000000;
+}
+
 form {
   display: flex;
   max-width: 80vw;
   margin: auto;
-  background-color: #FC997E;
-  justify-content: center;
+  background-color: #525A75;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 7px;
 }
 
-label {
-  display: flex;
-  border-bottom: black;
+#txtbox {
+  padding: 1em;
+  width: 70vw;
+  outline: none;
+  color: white;
+  background-color: #525A75;
+  border: 2px solid transparent;
+  border-bottom-color: black;
+  border-bottom-width: 5px;
+  border-style: solid;
+  line-height: 1.2;
+  border-radius: 15px;
+}
+
+#txtbox::placeholder {
+  color: white;
+  font-style: italic;
+  font-weight: 200;
+  text-shadow:2px 2px #000000;
+}
+
+#txtbox:hover {
+  cursor: pointer;
+  background-color: #737e9f;
+  
+}
+
+#sendtwt {
+  border-radius: 15px;
+  background-color: #FC997E;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 15px;
+  box-shadow: 1px 1px #000000;
+}
+
+#sendtwt:hover {
+  cursor: pointer;
+  background-color: #efb6a7;
 }
 
 .counter {
