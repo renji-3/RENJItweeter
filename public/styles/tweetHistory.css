@@ -1,0 +1,62 @@
+article {
+  border: 3px solid black;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  background-color: #737e9f;
+  color: antiquewhite;
+}
+
+article:hover {
+  box-shadow: 5px 10px;
+}
+
+.nameNLogo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em
+}
+
+.ATLA {
+  justify-content: space-evenly;
+  color: white;
+}
+
+.ATLA:hover {
+  cursor: pointer;
+  color: #efb6a7;
+}
+
+.handle {
+  color: white;
+}
+
+.handle:hover {
+  cursor: pointer;
+  color: #efb6a7;
+}
+
+.tweet {
+  border-bottom: 3px solid black;
+  margin: 3vh 2vw;
+  font-size: larger;
+  line-height: 1.5;
+}
+
+.footy {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  color: white;
+}
+
+.PressALike {
+  width: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.fas:hover {
+  cursor: pointer;
+  color: #efb6a7;
+}
