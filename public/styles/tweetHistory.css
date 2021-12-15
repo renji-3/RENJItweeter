@@ -19,6 +19,7 @@ article:hover {
 .ATLA {
   justify-content: space-evenly;
   color: white;
+  font-style: inherit;
 }
 
 .ATLA:hover {
@@ -28,6 +29,7 @@ article:hover {
 
 .handle {
   color: white;
+  font-weight: 200;
 }
 
 .handle:hover {
@@ -37,7 +39,9 @@ article:hover {
 
 .tweet {
   border-bottom: 3px solid black;
-  margin: 3vh 2vw;
+  margin: 0 2vw;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
   font-size: larger;
   line-height: 1.5;
 }
@@ -47,6 +51,12 @@ article:hover {
   justify-content: space-between;
   padding: 1em;
   color: white;
+}
+
+.PostTime{
+  font-family: 'Bungee', cursive;
+  font-size: 12pt;
+  color: #a4afd0;
 }
 
 .PressALike {
