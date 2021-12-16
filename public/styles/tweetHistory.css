@@ -4,6 +4,7 @@ article {
   margin-top: 1em;
   background-color: #737e9f;
   color: antiquewhite;
+  transition: box-shadow .3s;
 }
 
 article:hover {
@@ -17,7 +18,6 @@ article:hover {
 }
 
 .ATLA {
-  justify-content: space-evenly;
   color: white;
   font-style: inherit;
 }
@@ -44,6 +44,8 @@ article:hover {
   margin-bottom: 2vh;
   font-size: larger;
   line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .footy {

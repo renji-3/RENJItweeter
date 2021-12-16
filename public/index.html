@@ -22,6 +22,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -50,87 +51,20 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    
+    <section class="new-tweet">
+      <h2 id='compTweet'>Compose Tweet</h2>
+      <form class='sendTweet' action= "/tweets/" method="post">
+        <textarea name="text" placeholder= 'where we droppin boys?' id="txtbox"></textarea>
+        <div class= 'submit-and-counter'>
+          <button type="submit" id='sendtwt'>Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
 
-      <section class="new-tweet">
-        <h2 id='compTweet'>Compose Tweet</h2>
-        <form action= "/tweets/" method="post">
-          <textarea name="text" placeholder= 'where we droppin boys?' id="txtbox"></textarea>
-          <div class= 'submit-and-counter'>
-            <button type="submit" id='sendtwt'>Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      
-      <article> 
-        <header class='nameNLogo'>
-          <div class='ATLA'>
-            <i class="fas fa-spider"></i>
-            NOT PETER PARKER STOP ASKING ME THANKS
-          </div>
-          <div class='handle'>
-            @RespectTheHyphen
-          </div>
-        </header> 
-        <h1 class='tweet'>Mysterio's capping I ain't Peter Parker I'm not half as handsome, funny, or charming as him</h1>
-        <footer class='footy'>
-          <div class='PostTime'>
-            Just Now
-          </div>
-          <div class='PressALike'>
-            <i class="fas fa-bookmark"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-retweet"></i>
-          </div>
-        </footer>
-      </article>
+    <main class="container" id='tweets-container'>
 
-      <article> 
-        <header class='nameNLogo'>
-          <div class='ATLA'>
-            <i class="fas fa-chess-knight"></i>
-            Batman
-          </div>
-          <div class='handle'>
-            @NotBruceWayne
-          </div>
-        </header> 
-        <h1 class='tweet'>I am not bruce wayne</h1>
-        <footer class='footy'>
-          <div class='PostTime'>
-            Just Now
-          </div>
-          <div class='PressALike'>
-            <i class="fas fa-bookmark"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-retweet"></i>
-          </div>
-        </footer>
-      </article>
-
-      <article> 
-        <header class='nameNLogo'>
-          <div class='ATLA'>
-            <i class="fas fa-chess-knight"></i>
-            Kal-El
-          </div>
-          <div class='handle'>
-            @Superman
-          </div>
-        </header> 
-        <h1 class='tweet'>Batman is Bruce Wayne</h1>
-        <footer class='footy'>
-          <div class='PostTime'>
-            5 min ago
-          </div>
-          <div class='PressALike'>
-            <i class="fas fa-bookmark"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-retweet"></i>
-          </div>
-        </footer>
-      </article>
 
     </main>
   </body>
