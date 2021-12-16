@@ -68,6 +68,8 @@ $(document).ready(function() {
           console.log(error);
         });
     }
+    
+    $('#txtbox').val('');
   });
 
   const loadTweets = function() {
