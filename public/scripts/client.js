@@ -36,9 +36,9 @@ $(document).ready(function() {
       ${date}
     </div>
     <div class='PressALike'>
-      <i class="fas fa-bookmark"></i>
-      <i class="fas fa-heart"></i>
-      <i class="fas fa-retweet"></i>
+      <i class="bas fas fa-bookmark"></i>
+      <i class="bas fas fa-heart"></i>
+      <i class="bas fas fa-retweet"></i>
     </div>
   </footer>
 </article>`;

@@ -73,11 +73,7 @@ article:hover {
   color: white;
 }
 
-.fas{
-  transition: size .3s;
-}
-
-.fas:hover {
+.bas:hover {
   cursor: pointer;
   color: #efb6a7;
   size: 20px;
