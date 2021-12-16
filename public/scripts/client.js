@@ -23,14 +23,14 @@ $(document).ready(function() {
     const $tweet = `<article> 
   <header class='nameNLogo'>
     <div class='ATLA'>
-     <img src=${tweets.user.avatars}>
+     <img class='img' src=${tweets.user.avatars}>
       ${tweets.user.name}
     </div>
     <div class='handle'>
       ${tweets.user.handle}
     </div>
   </header> 
-  <h1 class='tweet'>${tweets.content.text}</h1>
+  <p class='tweet'>${escape(tweets.content.text)}</p>
   <footer class='footy'>
     <div class='PostTime'>
       ${date}
@@ -49,11 +49,15 @@ $(document).ready(function() {
   $('.sendTweet').submit(function(e) {
     e.preventDefault();
     const serializedData = $(this).serialize();
+    
+    $('#tweetTooShort').slideUp();
+    $('#tweetTooLong').slideUp();
+
     if ($('#txtbox').val().length < 1) {
-      alert('form cannot be empty');
+      $('#tweetTooShort').slideDown();
 
     } else if ($('#txtbox').val().length > 140) {
-      alert('form cannot exceed 140 characters');
+      $('#tweetTooLong').slideDown();
 
     } else {
       $.ajax({
@@ -80,15 +84,14 @@ $(document).ready(function() {
       });
   };
 
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   loadTweets();
 
 });
 
 
-// if form is empty
-// form cannot be empty (alert)
-// else if form.length > 140
-// form cannot exceed 140 characters (alert)
-// prevent submission
-
-// do not clear form

@@ -4,10 +4,10 @@ $(document).ready(function() {
   $('#txtbox').on('input', function() {
     // get value of text area characters - using .length
     const $txtlength = $(this).val().length;
-    console.log($txtlength);
+
     // have max value count down one at a time
     const maxCharCount = 140 - $txtlength;
-    console.log(maxCharCount);
+
     // html counter displays the changing value
     const $counter = $(this).siblings('.submit-and-counter').find('.counter').html(maxCharCount);
 

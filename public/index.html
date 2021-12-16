@@ -46,13 +46,19 @@
       </div>
       <!-- <br> removed bc dont like the spacing -->
       <div>
-          <h2>Your Name</h2>
+          <h2>80k85</h2>
       </div>
   </header>
 
     <!-- Page-specific (main) content here -->
-    
+
     <section class="new-tweet">
+
+    <div class='errorCode'>
+      <p id='tweetTooLong'>Say less! No for real... say less, you're not that sick</p>
+      <p id='tweetTooShort'>could you SPEAK UP A BIT</p>
+    </div>
+
       <h2 id='compTweet'>Compose Tweet</h2>
       <form class='sendTweet' action= "/tweets/" method="post">
         <textarea name="text" placeholder= 'where we droppin boys?' id="txtbox"></textarea>

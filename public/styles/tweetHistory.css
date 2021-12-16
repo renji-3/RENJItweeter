@@ -1,5 +1,6 @@
 article {
   border: 3px solid black;
+  border-radius: 5px 20px 20px 20px;
   margin-bottom: 1em;
   margin-top: 1em;
   background-color: #737e9f;
@@ -14,7 +15,7 @@ article:hover {
 .nameNLogo {
   display: flex;
   justify-content: space-between;
-  padding: 1em
+  padding: 1em;
 }
 
 .ATLA {
@@ -25,6 +26,10 @@ article:hover {
 .ATLA:hover {
   cursor: pointer;
   color: #efb6a7;
+}
+
+.img {
+  padding-right: 5px;
 }
 
 .handle {
@@ -68,7 +73,12 @@ article:hover {
   color: white;
 }
 
+.fas{
+  transition: size .3s;
+}
+
 .fas:hover {
   cursor: pointer;
   color: #efb6a7;
+  size: 20px;
 }
