@@ -18,3 +18,9 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Images
+
+Desktop Version
+![Desktop Version](https://github.com/renji-3/RENJItweeter/blob/master/public/images/Screen%20Shot%202021-12-16%20at%2011.54.02%20PM.png?raw=true)
+
+Mobile Version
+![Mobile Version](https://github.com/renji-3/RENJItweeter/blob/master/public/images/Screen%20Shot%202021-12-16%20at%2011.54.23%20PM.png?raw=true)
