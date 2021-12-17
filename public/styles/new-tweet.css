@@ -106,7 +106,6 @@
     position: relative;
     left: 25vw;
     width: 100vw;
-    flex-wrap: nowrap;
     text-align: center;
     font-size: 30pt;
     font-family: 'Bungee', cursive;
@@ -136,14 +135,14 @@
     width: 50vw;
     position: fixed;
     left: 45vw;
-    top: 34vh;
+    top: 46vh;
   }
   
   #tweetTooShort {
     width: 50vw;
     position: fixed;
     left: 45vw;
-    top: 34vh;
+    top: 46vh;
     
   }
 }
