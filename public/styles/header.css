@@ -32,11 +32,12 @@ h2 {
 /* Laptop/Desktop CSS */
 @media only screen and (min-width: 960px) {
   .bozo {
-    height: 25vh;
-    width: 25vw;
+    height: 35vh;
+    width: 35vw;
     float: left;
     position: relative;
-    right: 5vw;
+    left: 5vw;
+    top: 39vh;
   }
   
   .appaYIPYIP {
@@ -44,5 +45,12 @@ h2 {
     justify-content: center;
     justify-self: center;
     align-items: center;
+    position: relative;
+    bottom: 7vh;
+  }
+
+  #name {
+    position: relative;
+    bottom: 10vh;
   }
 }

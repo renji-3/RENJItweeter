@@ -100,6 +100,13 @@ form {
 
 /* Laptop/Desktop CSS */
 @media only screen and (min-width: 960px) {
+  #compTweet {
+    position: relative;
+    left: 35vw;
+    width: 50vw;
+    flex-wrap: nowrap;
+  }
+
   .new-tweet {
     display: flex;
     align-content: flex-start;
@@ -108,7 +115,7 @@ form {
 
   form {
     position: relative;
-    left: 1vw;
+    right: 4vw;
     display: flex;
     width: 50vw;
     margin: right;
