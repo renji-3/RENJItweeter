@@ -40,11 +40,11 @@ h2 {
     justify-self: center;
     align-items: center;
     position: relative;
-    top: 10em;
+    top: 6em;
   }
 
   #name {
     position: relative;
-    top: 6em;
+    top: 4em;
   }
 }

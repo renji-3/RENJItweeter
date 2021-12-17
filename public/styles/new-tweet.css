@@ -3,7 +3,7 @@
   margin: 10px;
 }
 
-.sendTweet {
+.buildTweet {
   width: 80vw;
   margin: auto;
   justify-content: space-between;
@@ -104,7 +104,7 @@
 /* Laptop/Desktop CSS */
 @media only screen and (min-width: 960px) {
 
-  .sendTweet {
+  .buildTweet {
     width: 50vw;
     margin: right;
     padding-top: 4em;
@@ -119,25 +119,19 @@
     right: 8px;
   }
 
-  .new-tweet {
-    display: flex;
-    align-content: flex-start;
-    justify-content: center;
-  }
-
   #tweetTooLong {
     width: 50vw;
-    position: absolute;
-    left: 32.5em;
-    top: 12.3em;
+    position: fixed;
+    right: 13em;
+    top: 13em;
     z-index: 2;
   }
   
   #tweetTooShort {
     width: 50vw;
-    position: absolute;
-    left: 32.5em;
-    top: 12.3em;
+    position: fixed;
+    right: 13em;
+    top: 13em;
     z-index: 2;
   }
 }

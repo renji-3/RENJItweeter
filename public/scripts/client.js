@@ -12,19 +12,19 @@ $(document).ready(function() {
   const renderTweets = function(tweetDB) {
     $('#tweets-container').empty(); //empty text box after tweet is sent
 
-    for (let tweet of tweetDB) {
+    for (let tweet of tweetDB) { //go thru tweet database
       let $tweetElement = createTweetElement(tweet);
-      $('#tweets-container').prepend($tweetElement);
+      $('#tweets-container').prepend($tweetElement); //prepend tweets to the tweets container
     }
   };
 
-  const createTweetElement = function(tweets) {
+  const createTweetElement = function(tweets) { //create tweets based on this template
     const date = timeago.format(tweets.created_at);
     const $tweet = `
     <article> 
   <header class='nameNLogo'>
     <div class='ATLA'>
-     <img class='img' src=${tweets.user.avatars}>
+     <img class='pic' src=${tweets.user.avatars}>
       ${tweets.user.name}
     </div>
     <div class='handle'>
@@ -37,9 +37,9 @@ $(document).ready(function() {
       ${date}
     </div>
     <div class='PressALike'>
-      <i class="bas fas fa-bookmark"></i>
-      <i class="bas fas fa-heart"></i>
-      <i class="bas fas fa-retweet"></i>
+      <i class="inters fas fa-bookmark"></i>
+      <i class="inters fas fa-heart"></i>
+      <i class="inters fas fa-retweet"></i>
     </div>
   </footer>
 </article>`;
@@ -47,17 +47,17 @@ $(document).ready(function() {
     return $tweet;
   };
 
-  $('.sendTweet').submit(function(e) {
+  $('.buildTweet').submit(function(e) { // pressing the tweet button
     e.preventDefault();
-    const serializedData = $(this).serialize();
+    const serializedData = $(this).serialize(); 
     
-    $('#tweetTooShort').slideUp();
+    $('#tweetTooShort').slideUp(); //remove error messages
     $('#tweetTooLong').slideUp();
 
-    if ($('#txtbox').val().length < 1) {
+    if ($('#txtbox').val().length < 1) { //cause for empty box error
       return $('#tweetTooShort').slideDown();
 
-    } else if ($('#txtbox').val().length > 140) {
+    } else if ($('#txtbox').val().length > 140) { //cause for exceeding character limit error
       return $('#tweetTooLong').slideDown();
 
     } else {
@@ -74,11 +74,11 @@ $(document).ready(function() {
         });
     }
     
-    $('#txtbox').val('');
-    $('.counter').val(140);
+    $('#txtbox').val(''); //empty the textbook
+    $('.counter').val(140); //reset counter to 140
   });
 
-  const loadTweets = function() {
+  const loadTweets = function() { //load tweets
     $.ajax('/tweets', { method: 'GET' })
       .then(function(moreTweets) {
         console.log('Success: ', moreTweets);
@@ -86,7 +86,7 @@ $(document).ready(function() {
       });
   };
 
-  const escape = function(str) {
+  const escape = function(str) { // prevents xss attacks
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;

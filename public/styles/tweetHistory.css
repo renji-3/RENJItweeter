@@ -28,7 +28,7 @@ article:hover {
   color: #efb6a7;
 }
 
-.img {
+.pic {
   padding-right: 5px;
 }
 
@@ -73,7 +73,7 @@ article:hover {
   color: white;
 }
 
-.bas:hover {
+.inters:hover {
   cursor: pointer;
   color: #efb6a7;
   size: 20px;
