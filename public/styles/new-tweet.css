@@ -10,11 +10,13 @@ form {
   justify-content: space-between;
   align-items: center;
   border-radius: 7px;
+  position: relative;
+  left: 40px;
 }
 
 #txtbox {
   padding: 10px;
-  width: 70vw;
+  width: 50vw;
   height: 10vh;
   outline: none;
   color: white;
@@ -25,6 +27,8 @@ form {
   border-style: solid;
   line-height: 1.2;
   resize: none;
+  position: fixed;
+  right: 150px;
 }
 
 #txtbox::placeholder {
@@ -93,18 +97,33 @@ form {
 }
 
 
-/* Tablet CSS */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* Write Tablet only CSS here */
-}
 
 /* Laptop/Desktop CSS */
 @media only screen and (min-width: 960px) {
   #compTweet {
     position: relative;
-    left: 35vw;
-    width: 50vw;
+    left: 25vw;
+    width: 100vw;
     flex-wrap: nowrap;
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Bungee', cursive;
+    padding-bottom: 10px;
+  }
+
+  form {
+    position: relative;
+    left: -100px;
+    display: flex;
+    width: 50vw;
+    margin: right;
+    padding-top: 10em;
+  }
+
+  #txtbox {
+    width: 40vw;
+    position: relative;
+    right: 4px;
   }
 
   .new-tweet {
@@ -113,13 +132,18 @@ form {
     justify-content: center;
   }
 
-  form {
-    position: relative;
-    right: 4vw;
-    display: flex;
+  #tweetTooLong {
     width: 50vw;
-    margin: right;
-    padding-top: 10em;
-
+    position: fixed;
+    left: 45vw;
+    top: 34vh;
+  }
+  
+  #tweetTooShort {
+    width: 50vw;
+    position: fixed;
+    left: 45vw;
+    top: 34vh;
+    
   }
 }

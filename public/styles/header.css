@@ -24,11 +24,6 @@ h2 {
 }
 
 
-/* Tablet CSS */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* Write Tablet only CSS here */
-}
-
 /* Laptop/Desktop CSS */
 @media only screen and (min-width: 960px) {
   .bozo {

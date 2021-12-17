@@ -20,7 +20,8 @@ $(document).ready(function() {
 
   const createTweetElement = function(tweets) {
     const date = timeago.format(tweets.created_at);
-    const $tweet = `<article> 
+    const $tweet = `
+    <article> 
   <header class='nameNLogo'>
     <div class='ATLA'>
      <img class='img' src=${tweets.user.avatars}>
@@ -74,6 +75,7 @@ $(document).ready(function() {
     }
     
     $('#txtbox').val('');
+    $('.counter').val(140);
   });
 
   const loadTweets = function() {
