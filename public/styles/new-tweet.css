@@ -5,9 +5,8 @@
 
 form {
   display: flex;
-  max-width: 80vw;
+  width: 80vw;
   margin: auto;
-  background-color: #525A75;
   justify-content: space-between;
   align-items: center;
   border-radius: 7px;
@@ -19,7 +18,7 @@ form {
   height: 10vh;
   outline: none;
   color: white;
-  background-color: #525A75;
+  background-color: transparent;
   border: 2px solid transparent;
   border-bottom-color: black;
   border-bottom-width: 5px;
@@ -69,8 +68,6 @@ form {
   color: #f48469
 }
 
-
-
 #tweetTooLong {
   display: none;
   text-align: center;
@@ -93,4 +90,29 @@ form {
   margin: auto;
   margin-bottom: .5em;
   margin-top: .5em;
+}
+
+
+/* Tablet CSS */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* Write Tablet only CSS here */
+}
+
+/* Laptop/Desktop CSS */
+@media only screen and (min-width: 960px) {
+  .new-tweet {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+  }
+
+  form {
+    position: relative;
+    left: 1vw;
+    display: flex;
+    width: 50vw;
+    margin: right;
+    padding-top: 10em;
+
+  }
 }

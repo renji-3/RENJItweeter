@@ -78,3 +78,26 @@ article:hover {
   color: #efb6a7;
   size: 20px;
 }
+
+
+/* Tablet CSS */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* Write Tablet only CSS here */
+}
+
+/* Laptop/Desktop CSS */
+@media only screen and (min-width: 960px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+  }
+
+  article {
+    position: relative;
+    left: 19vw;
+    margin: .5em .2em;
+    width: 40em;
+  }
+  
+}

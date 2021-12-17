@@ -1,3 +1,4 @@
+/* default CSS is mobile */
 .bozo {
   height: 500px;
   width: 100vw;
@@ -12,12 +13,36 @@
   align-items: center;
 }
 
-.DDA {
-  
-}
+/* .DDA {
+
+} for animating arrows */
 
 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* Tablet CSS */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* Write Tablet only CSS here */
+}
+
+/* Laptop/Desktop CSS */
+@media only screen and (min-width: 960px) {
+  .bozo {
+    height: 25vh;
+    width: 25vw;
+    float: left;
+    position: relative;
+    right: 5vw;
+  }
+  
+  .appaYIPYIP {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+  }
 }
