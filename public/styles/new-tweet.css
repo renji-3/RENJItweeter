@@ -3,20 +3,18 @@
   margin: 10px;
 }
 
-form {
-  display: flex;
+.sendTweet {
   width: 80vw;
   margin: auto;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   border-radius: 7px;
-  position: relative;
   left: 40px;
 }
 
 #txtbox {
   padding: 10px;
-  width: 50vw;
+  width: 80vw;
   height: 10vh;
   outline: none;
   color: white;
@@ -27,8 +25,6 @@ form {
   border-style: solid;
   line-height: 1.2;
   resize: none;
-  position: fixed;
-  right: 150px;
 }
 
 #txtbox::placeholder {
@@ -44,6 +40,12 @@ form {
   background-color: #737e9f;
 }
 
+.submit-and-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #sendtwt {
   font-family: 'Bungee', cursive ;
   border-radius: 15px;
@@ -51,7 +53,7 @@ form {
   color: white;
   padding: 16px 25px;
   text-decoration: none;
-  margin: 15px;
+  margin-right: 25px;
   box-shadow: 1px 1px #000000;
 }
 
@@ -113,7 +115,7 @@ form {
 
   form {
     position: relative;
-    left: -100px;
+    left: -97px;
     display: flex;
     width: 50vw;
     margin: right;
@@ -121,7 +123,7 @@ form {
   }
 
   #txtbox {
-    width: 40vw;
+    max-width: 40vw;
     position: relative;
     right: 4px;
   }

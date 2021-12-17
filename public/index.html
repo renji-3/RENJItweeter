@@ -59,13 +59,12 @@
 
       <h2 id='compTweet'>Compose Tweet</h2>
       <form class='sendTweet' action= "/tweets/" method="post">
+        <textarea name="text" placeholder= 'where we droppin boys?' id="txtbox"></textarea>
         <div class= 'submit-and-counter'>
           <button type="submit" id='sendtwt'>Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
-        <textarea name="text" placeholder= 'where we droppin boys?' id="txtbox"></textarea>
       </form>
-      
       <div class='errorCode'>
         <p id='tweetTooLong'>Say less! No for real... say less, you're not that sick</p>
         <p id='tweetTooShort'>could you SPEAK UP A BIT</p>
