@@ -110,13 +110,14 @@
     text-align: center;
     font-size: 30pt;
     font-family: 'Bungee', cursive;
-    padding-bottom: 10px;
+    padding-bottom: 1em;
   }
 
   .sendTweet {
     width: 50vw;
     margin: right;
     padding-top: 10em;
+    padding-right: 10em;
   }
 
   #txtbox {
