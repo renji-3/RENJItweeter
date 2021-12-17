@@ -14,6 +14,7 @@
 
 #txtbox {
   padding: 10px;
+  margin-top: 2em;
   width: 80vw;
   height: 10vh;
   outline: none;
@@ -102,27 +103,20 @@
 
 /* Laptop/Desktop CSS */
 @media only screen and (min-width: 960px) {
-  #compTweet {
-    position: relative;
-    left: 25vw;
-    width: 100vw;
-    text-align: center;
-    font-size: 30pt;
-    font-family: 'Bungee', cursive;
-    padding-bottom: 1em;
-  }
 
   .sendTweet {
     width: 50vw;
     margin: right;
-    padding-top: 10em;
+    padding-top: 4em;
     padding-right: 10em;
+    position: relative;
+    left: 18em;
   }
 
   #txtbox {
     max-width: 40vw;
     position: relative;
-    right: 4px;
+    right: 8px;
   }
 
   .new-tweet {
@@ -133,16 +127,17 @@
 
   #tweetTooLong {
     width: 50vw;
-    position: fixed;
-    left: 45vw;
-    top: 46vh;
+    position: absolute;
+    left: 32.5em;
+    top: 12.3em;
+    z-index: 2;
   }
   
   #tweetTooShort {
     width: 50vw;
-    position: fixed;
-    left: 45vw;
-    top: 46vh;
-    
+    position: absolute;
+    left: 32.5em;
+    top: 12.3em;
+    z-index: 2;
   }
 }

@@ -10,7 +10,7 @@
 $(document).ready(function() {
 
   const renderTweets = function(tweetDB) {
-    $('#tweets-container').empty();
+    $('#tweets-container').empty(); //empty text box after tweet is sent
 
     for (let tweet of tweetDB) {
       let $tweetElement = createTweetElement(tweet);
@@ -55,10 +55,10 @@ $(document).ready(function() {
     $('#tweetTooLong').slideUp();
 
     if ($('#txtbox').val().length < 1) {
-      $('#tweetTooShort').slideDown();
+      return $('#tweetTooShort').slideDown();
 
     } else if ($('#txtbox').val().length > 140) {
-      $('#tweetTooLong').slideDown();
+      return $('#tweetTooLong').slideDown();
 
     } else {
       $.ajax({

@@ -28,12 +28,10 @@ h2 {
 @media only screen and (min-width: 960px) {
   .header {
     position: fixed;
-    height: 40vh;
-    width: 35vw;
+    height: 45em;
+    width: 30em;
     float: left;
-    position: relative;
-    left: 5vw;
-    top: 39vh;
+    top: 5em;
   }
   
   .appaYIPYIP {
@@ -42,11 +40,11 @@ h2 {
     justify-self: center;
     align-items: center;
     position: relative;
-    bottom: 12vh;
+    top: 10em;
   }
 
   #name {
     position: relative;
-    bottom: 15vh;
+    top: 6em;
   }
 }
